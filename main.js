@@ -171,16 +171,16 @@ function changeColor(body){
     
     
     backgroundColor = document.querySelector(".backgroundColor");
-    footer = document.querySelector(".footer");
     bracketsColor = document.querySelector(".bracketsColor");
     keysColor = document.querySelector(".keysColor");
     valuesColor = document.querySelector(".valuesColor");
     colonColor = document.querySelector(".colonColor");
+    footer = document.querySelector(".footer");
 
     backgroundColor.addEventListener("input", function(){
         const body = document.querySelector("body");
         body.style.backgroundColor = backgroundColor.value;
-        footerColor.style.backgroundColor = backgroundColor.value;
+        footer.style.backgroundColor = backgroundColor.value;
         chrome.storage.sync.set({'bagColor': `${backgroundColor.value}`});
     });
     
