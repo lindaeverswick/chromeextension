@@ -180,7 +180,7 @@ function changeColor(body){
     backgroundColor.addEventListener("input", function(){
         const body = document.querySelector("body");
         body.style.backgroundColor = backgroundColor.value;
-        footer.style.backgroundColor = backgroundColor.value;
+        // footer.style.backgroundColor = backgroundColor.value;
         chrome.storage.sync.set({'bagColor': `${backgroundColor.value}`});
     });
     
